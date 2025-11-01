@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include("../partials/head") %>
+
+    <body class="bg-gray-100  font-sans text-gray-800 flex flex-col min-h-screen">
+        <%- include("../partials/header") %>
+            <main class="container mx-auto p-8 flex-grow">
+
+                <section class="text-center mb-12">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Coach de Carrera para el Crecimiento
+                        Profesional con IA
+                    </h1>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Sitio web moderno que utiliza
+                        inteligencia artificial para ayudar a profesionales a avanzar en sus carreras. </p>
+                    <div class="relative w-full  mx-auto">
+                        <div class="relative h-80 md:h-[32rem] overflow-hidden rounded-lg shadow-lg">
+                            <div id="image-slider"
+                                class="flex transition-transform duration-500 ease-in-out  h-full w-full">
+                                <!-- Poner algunas imagenes de referencia -->
+                                <img src="/img/sensai/pagina-principal.png" alt="Pagina principal"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/sensai/login.png" alt="Login del sitio"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/sensai/completar-perfil.png" alt="Completar datos del perfil"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/sensai/sector.png" alt="Perspectivas del sector"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/sensai/cv.png" alt="Creacion de CV"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/sensai/cv-2.png" alt="CV generado para descarga"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/sensai/Entrevista.png" alt="Preparacion de Entrevista"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/sensai/entrevista-ia.png" alt="Entrevista generada por IA"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/sensai/carta-presentacion.png" alt="Crear carta de presentacion"
+                                    class="w-full h-full object-cover flex-shrink-0">
+                                <img src="/img/sensai/presentacion-ia.png" alt="Carta de Presentacion generada por IA"
+                                    class="w-full h-full object-cover flex-shrink-0">
+
+                            </div>
+                        </div>
+
+                        <!-- navegacion js -->
+                        <div id="carousel-dots" class="flex justify-center mt-4 space-x-2">
+                            <!-- js -->
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="mb-12">
+
+                </section>
+
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Descripcion del Proyecto</h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">Sensai es una aplicación web full-stack que
+                                utiliza inteligencia artificial para ayudar a los profesionales a crear currículums
+                                impactantes, cartas de presentación personalizadas y prepararse para entrevistas, todo
+                                adaptado a su sector o industria y habilidades.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed">
+                                El proceso de búsqueda de empleo puede ser abrumador. Los profesionales a menudo luchan
+                                por crear materiales de solicitud personalizados y por sentirse preparados para las
+                                entrevistas, especialmente en industrias competitivas. Sensai automatiza y optimiza este
+                                proceso, ahorrando incontables horas de trabajo y proporcionando a los usuarios una
+                                ventaja competitiva.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Caracteristicas Principales
+                            </h2>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Creador de Currículums con IA</li>
+                                <li>Generador de Cartas de Presentacion con IA</li>
+                                <li>Preparacion de Entrevista con IA</li>
+                                <li>Perspectivas del sector de acuerdo al perfil</li>
+                                <li>Registro de usuario</li>
+                                <li>Guardar currículum generado en PDF</li>
+                                <li>Historial de entrevista realizadas</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Habilidades Aplicadas
+                            </h2>
+                            <ul class="flex flex-wrap gap-2">
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Desarrollo
+                                    Full-Stack</li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">
+                                    Inteligencia Artificial</li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Diseño Responsivo
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Diseño de Base de
+                                    Datos </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Autenticación y
+                                    Sesiones de Usuario</li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">
+                                    Generacion de PDF</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Herramientas y Tecnologias</h2>
+                            <ul class="flex flex-wrap gap-2">
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">React</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Next.js</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">JavaScript</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Tailwind CSS</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Node.js</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Prisma</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Inngest</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Neon(PostgreSQL)
+                                </li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Clerk</li>
+                                <li class="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">Gemini API</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Enlaces del proyecto</h2>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a target="_blank" href="https://github.com/JuniorJR2/sensai"
+                                    class="flex-1 text-center bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                                    <i class="fab fa-github mr-2"></i>Ver en GitHub</a>
+                                <!-- <a target="_blank"
+                                    href="https://drive.google.com/file/d/1O_WA9zTqaDUtJYNmLZ8mreQArgfB_y2W/view?usp=sharing"
+                                    class="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Ver Documentacion</a> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+            </main>
+
+            <%- include("../partials/footer") %>
+
+                <script src="/js/carrusel.js"></script>
+    </body>
+
+</html>
