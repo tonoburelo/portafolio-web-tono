@@ -24,7 +24,7 @@ app.get("/projects/projects-pizzeria", (req, res) => res.render("projects/projec
 app.get("/projects/projects-libros", (req, res) => res.render("projects/projects-libros"));
 
 // Servidor
-//const port = process.env.PORT || 3000;
-//app.listen(port, () => console.log(`Servidor en http://localhost:${port}`));
-module.export=app;
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Servidor en http://localhost:${port}`));
+
 
