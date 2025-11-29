@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include("../partials/head") %>
+
+    <body class="bg-gray-100  font-sans text-gray-800 flex flex-col min-h-screen">
+        <%- include("../partials/header") %>
+            <main class="container mx-auto p-8 flex-grow">
+
+                <section class="text-center mb-12">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Salarios en ciencia de datos</h1>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Dashboard interactivo en Tableau mostrando el estado actual del campo de ciencias de datos en (2020-2022)</p>
+
+                    <div class="relative w-full max-w-4xl mx-auto">
+                        <div class="relative h-64 md:h-96 overflow-hidden rounded-lg shadow-lg">
+                            <div id="image-slider" class="flex transition-transform duration-500 ease-in-out h-full">
+                                <!-- Poner algunas imagenes de referencia -->
+                                <img src="/img/Proyecto salarios en ciencias de datos/dashboard.png" alt="dashboard"
+                                    class="w-full h-full flex-shrink-0">
+                            </div>
+                        </div>
+
+                        <!-- navegacion js -->
+                        <div id="carousel-dots" class="flex justify-center mt-4 space-x-2">
+                            <!-- js -->
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <!-- NUEVA SECCIÓN BONUS: Flujo del Sistema 
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Flujo del Sistema</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <img src="/img/inpi/Imágen administración de usuarios.png" alt="Panel de administrador"
+                                class="w-full h-40 rounded-t-lg mb-4">
+                            <h3 class="font-semibold text-lg">1. Administrador</h3>
+                            <p class="text-gray-600 text-sm">Gestiona usuarios y controla todo el sistema.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <img src="/img/inpi/div-info.png" alt="Creando una publicación"
+                                class="w-full h-40 rounded-t-lg mb-4">
+                            <h3 class="font-semibold text-lg">2. Promotor</h3>
+                            <p class="text-gray-600 text-sm">Crea y publica contenido dinámicamente de su área.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <img src="/img/inpi/view-publi.png" alt="Contenido publicado"
+                                class="w-full h-40 rounded-t-lg mb-4">
+                            <h3 class="font-semibold text-lg">3. Usuario Final</h3>
+                            <p class="text-gray-600 text-sm">La comunidad accede a la información del instituto y puede hacer citas con los diferentes servicios.</p>
+                        </div>
+                    </div>
+                </section>
+                -->
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Descripción del Proyecto</h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">En este proyecto se buscó profundizar en el estado del campo de ciencia de datos, para así tener una mejor noción y tomar mejores decisiones en base a los insights a los que se llegó al calcular una serie de métricas y requerimientos gráficos que se muestran en la siguiente sección. 
+                            </p>
+                            
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Características Principales
+                            </h2>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Salario anual promedio en dólares por nivel de experiencia y tipo de empleo: Utilizando 3 puntos claves, se hace un cálculo preciso sobre el salario en la ciencia de datos.</li>
+                                <li>Total de compañías por tamaño y por locación: Mostrar el tamaño de las empresas de este sector según los países.</li>
+                                <li>Top 10 residencia de trabajadores: Los lugares donde viven más científicos de datos.</li>
+                                <li>Nivel de experiencia: Una gráfica que muestra el porcentaje de nivel de experiencia que existe en el sector.</li>
+                                <li>Generacion de citas (area juridica)</li>
+                                <li>Visualizacion de citas pendientes(area juridica)</li>
+                                <li>Tipo de empleo: Una gráfica de pastel sobre las diferentes formas de empleabilidad que hay.</li>
+                                <li>Salario anual promedio por nombre de trabajo y experiencia</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Habilidades Aplicadas
+                            </h2>
+                            <ul class="flex flex-wrap gap-2">
+                                 <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Definición del problema
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Análisis exploratorio de datos
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Limpieza y transformación de datos
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Estadísticas descriptivas
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Storytelling con datos
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Visualización de datos en Tableau
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                🛠️ Habilidades y Tecnologías</h2>
+                            <ul class="flex flex-wrap gap-2">      
+                                <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau">
+                                <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+                                <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+                                <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Excel">
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Enlaces del proyecto</h2>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a target="_blank" href="https://github.com/tonoburelo/Salarios-de-trabajos-en-ciencia-de-datos"
+                                    class="flex-1 text-center bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                                    <i class="fab fa-github mr-2"></i>Ver en GitHub</a>
+                                <a target="_blank"
+                                    href="https://public.tableau.com/app/profile/jos.antonio.burelo.hern.ndez/viz/Salariodetrabajosdecienciadedatos/Dashboard"
+                                    class="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Ver Dashboard</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <%- include("../partials/footer") %>
+
+                <script src="/js/carrusel.js"></script>
+    </body>
+
+</html>

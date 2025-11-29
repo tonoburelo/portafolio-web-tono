@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include("../partials/head") %>
+
+    <body class="bg-gray-100  font-sans text-gray-800 flex flex-col min-h-screen">
+        <%- include("../partials/header") %>
+            <main class="container mx-auto p-8 flex-grow">
+
+                <section class="text-center mb-12">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Entender comportamiento de clientes con Machine Learning</h1>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Algoritmo de aprendizaje KMeans Clustering para analizar las ventas de un ecommerce.</p>
+                    <div class="relative w-full max-w-4xl mx-auto">
+                        <div class="relative h-64 md:h-96 overflow-hidden rounded-lg shadow-lg">
+                            <div id="image-slider" class="flex transition-transform duration-500 ease-in-out h-full">
+                                <!-- Poner algunas imagenes de referencia -->
+                                <img src="/img/comportamiento de clientes/Imágen Gráfica 3D de Clusters.png" alt="Home"
+                                    class="w-full h-full flex-shrink-0">
+                                <img src="/img/comportamiento de clientes/Imágen Gráfica valor monetario por cluster.png" alt="Home"
+                                    class="w-full h-full flex-shrink-0">
+                                <img src="/img/comportamiento de clientes/Imágen Gráfica valor monetario por clusters outliers.png" alt="Home"
+                                    class="w-full h-full flex-shrink-0">
+                                <img src="/img/comportamiento de clientes/Imágen Gráfica final.png" alt="Home"
+                                    class="w-full h-full flex-shrink-0">
+                            </div>
+                        </div>
+
+                        <!-- navegacion js -->
+                        <div id="carousel-dots" class="flex justify-center mt-4 space-x-2">
+                            <!-- js -->
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="mb-12">
+
+                </section>
+
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Descripción del Proyecto</h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">Este proyecto es para determinar los tipos de clientes que tiene este ecommerce en cuestión y para ver los patrones de comportamiento de cada uno para después tomar las decisiones más efectivas sobre como abordarlos para mejorar las ventas.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Características Principales
+                            </h2>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                Permite dividir en diferentes de tipos de clientes de acuerdo a ciertos patrones de comportamiento:
+                                <li>Cluster 0 (Azul) "Retener": representa a clientes de alto valor que compran con regularidad, aunque no siempre de forma reciente.</li>
+                                <li>Cluster 1 (Naranja) "Re-Engage": compradores poco frecuentes y de menor valor que no han comprado recientemente.</li>
+                                <li>Cluster 2 (Verde) "Nutrir": clientes menos activos y de menor valor, pero que han realizado compras recientemente.</li>
+                                <li>Cluster 3 (Rojo) "Recompensar": compradores de alto valor y muy frecuentes, muchos de los cuales siguen comprando activamente.</li>
+                                <li>Cluster 4 (Outliers Monetarios) MIMAR: Gastan mucho, pero no compran con frecuencia.</li>
+                                <li>Cluster 5 (Outliers Frecuencia) VENTA ADICIONAL: Compradores frecuentes que gastan menos por compra.</li>
+                                <li>Cluster 6 (Outliers Monetarios & Frecuencia) DELEITAR: clientes más valiosos, con un gasto extremo y compras frecuentes.</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Habilidades Aplicadas
+                            </h2>
+                            <ul class="flex flex-wrap gap-2">
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Limpieza y preparación de datos
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Análisis exploratorio de datos
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Ingeniería de características
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Construcción y entrenamiento del modelo
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Evaluación del modelo
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                🛠️ Habilidades y Tecnologías</h2>
+                            <ul class="flex flex-wrap gap-2">
+                                 <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+                                <img src="https://img.shields.io/badge/Scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn">
+                                <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+                                <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib">
+                                <img src="https://img.shields.io/badge/Seaborn-3E8E9E?style=for-the-badge&logo=seaborn&logoColor=white" alt="Seaborn">
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Enlaces del proyecto</h2>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a target="_blank" href="https://github.com/tonoburelo/Proyecto_Comportamiento_de_clientes--KMeans_Clustering"
+                                    class="flex-1 text-center bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                                    <i class="fab fa-github mr-2"></i>Ver en GitHub</a>
+                                <!-- <a target="_blank"
+                                    href="https://drive.google.com/file/d/1O_WA9zTqaDUtJYNmLZ8mreQArgfB_y2W/view?usp=sharing"
+                                    class="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Ver Documentacion</a> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+            </main>
+
+            <%- include("../partials/footer") %>
+
+                <script src="/js/carrusel.js"></script>
+    </body>
+
+</html>

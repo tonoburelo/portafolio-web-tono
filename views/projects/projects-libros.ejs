@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include("../partials/head") %>
+
+    <body class="bg-gray-100  font-sans text-gray-800 flex flex-col min-h-screen">
+        <%- include("../partials/header") %>
+            <main class="container mx-auto p-8 flex-grow">
+
+                <section class="text-center mb-12">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Review sobre los libros en Amazon</h1>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Dashboard interactivo en PowerBI que muestra las estadísticas más importantes de los libros a la venta en Amazon (hasta el 2014).</p>
+
+                    <div class="relative w-full max-w-4xl mx-auto">
+                        <div class="relative h-64 md:h-96 overflow-hidden rounded-lg shadow-lg">
+                            <div id="image-slider" class="flex transition-transform duration-500 ease-in-out h-full">
+                                <!-- Poner algunas imagenes de referencia -->
+                                <img src="/img/Proyecto libros en Amazon/amazon-1.png" alt="img-1"
+                                    class="w-full h-full flex-shrink-0">
+                                <img src="/img/Proyecto libros en Amazon/amazon-2.png" alt="img-2"
+                                    class="w-full h-full flex-shrink-0">
+                                <img src="/img/Proyecto libros en Amazon/amazon-3.png" alt="img-3"
+                                    class="w-full h-full flex-shrink-0">
+                            </div>
+                        </div>
+
+                        <!-- navegacion js -->
+                        <div id="carousel-dots" class="flex justify-center mt-4 space-x-2">
+                            <!-- js -->
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <!-- NUEVA SECCIÓN BONUS: Flujo del Sistema 
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Flujo del Sistema</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <img src="/img/inpi/Imágen administración de usuarios.png" alt="Panel de administrador"
+                                class="w-full h-40 rounded-t-lg mb-4">
+                            <h3 class="font-semibold text-lg">1. Administrador</h3>
+                            <p class="text-gray-600 text-sm">Gestiona usuarios y controla todo el sistema.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <img src="/img/inpi/div-info.png" alt="Creando una publicación"
+                                class="w-full h-40 rounded-t-lg mb-4">
+                            <h3 class="font-semibold text-lg">2. Promotor</h3>
+                            <p class="text-gray-600 text-sm">Crea y publica contenido dinámicamente de su área.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <img src="/img/inpi/view-publi.png" alt="Contenido publicado"
+                                class="w-full h-40 rounded-t-lg mb-4">
+                            <h3 class="font-semibold text-lg">3. Usuario Final</h3>
+                            <p class="text-gray-600 text-sm">La comunidad accede a la información del instituto y puede hacer citas con los diferentes servicios.</p>
+                        </div>
+                    </div>
+                </section>
+                -->
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Descripción del Proyecto</h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">Este proyecto se analiza el dataset Amazon Books Reviews proveniente del sitio web Kaggle, el cual contiene información sobre los libros a la venta en Amazon (hasta el 2014), para ganar perspectiva sobre ello, específicamente se calcularon las siguientes métricas: Total de Libros a la Venta, Total de Autores, Total de editoriales, Total de Categorías. 
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Características Principales
+                            </h2>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Autores con mayor número de libros a la venta.</li>
+                                <li>Editoriales con mayor número de libros a la venta.</li>
+                                <li>Categorías con mayor número de libros a la venta.</li>
+                                <li>Libros con mayor recuento de valoraciones.</li>
+                                <li>Libros más caros.</li>
+                                <li>Libros con mayor número de puntuaciones de revisión.</li>
+                                <li>Libros con mejor promedio por puntuación de revisión.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Habilidades Aplicadas
+                            </h2>
+                            <ul class="flex flex-wrap gap-2">
+                                 <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Definición del problema
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Análisis exploratorio de datos
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Queries en SQL
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Limpieza y transformación de datos
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Storytelling con datos
+                                </li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Visualización de datos en PowerBI
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                🛠️ Habilidades y Tecnologías</h2>
+                            <ul class="flex flex-wrap gap-2">      
+                                <img src="https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=powerbi&logoColor=white" alt="PowerBI">
+                                <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+                                <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
+                                <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Excel">
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Enlaces del proyecto</h2>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a target="_blank" href="https://github.com/tonoburelo/Libros_Amazon"
+                                    class="flex-1 text-center bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                                    <i class="fab fa-github mr-2"></i>Ver en GitHub</a>
+                                <a target="_blank"
+                                    href="https://app.powerbi.com/view?r=eyJrIjoiMTQ4YTBjMTItYTUzYy00MTFhLWIwYTYtYmU5ZTk5NmYyYWZhIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9&pageName=ReportSection979ea091fda90c403e5a"
+                                    class="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Ver Dashboard</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <%- include("../partials/footer") %>
+
+                <script src="/js/carrusel.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include("../partials/head") %>
+
+    <body class="bg-gray-100  font-sans text-gray-800 flex flex-col min-h-screen">
+        <%- include("../partials/header") %>
+            <main class="container mx-auto p-8 flex-grow">
+
+                <section class="text-center mb-12">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Aplicación TypingApp</h1>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Programa en Java para aprender mecanografía. </p>
+                    <div class="relative w-full max-w-4xl mx-auto">
+                        <div class="relative h-64 md:h-96 overflow-hidden rounded-lg shadow-lg">
+                            <div id="image-slider" class="flex transition-transform duration-500 ease-in-out h-full">
+                                <!-- Poner algunas imagenes de referencia -->
+                                <img src="/img/typingapp/TypingApp Home.png" alt="Home"
+                                    class="w-full h-full flex-shrink-0">
+                                <img src="/img/typingapp/TypingApp Tutorial.png" alt="Tutorial"
+                                    class="w-full h-full flex-shrink-0">
+                                <img src="/img/typingapp/TypingApp Ejercicios.png" alt="Ejercicios"
+                                    class="w-full h-full flex-shrink-0">
+                                <img src="/img/typingapp/TypingApp imágen.png" alt="Ejercicio 2"
+                                    class="w-full h-full flex-shrink-0">
+                                <img src="/img/typingapp/TypingApp Información.png" alt="Info"
+                                    class="w-full h-full flex-shrink-0">
+                            </div>
+                        </div>
+
+                        <!-- navegacion js -->
+                        <div id="carousel-dots" class="flex justify-center mt-4 space-x-2">
+                            <!-- js -->
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="mb-12">
+
+                </section>
+
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Descripción del Proyecto</h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">Lamentablemente, no todas las personas que tienen una computadora saben cómo escribir en el teclado correctamente utilizando las reglas de mecanografía, por lo que no pueden obtener mayor velocidad de escritura, escribir sin ver el teclado, mejorar en la gramática, además de una mayor sensación de eficacia y menos torpeza a la hora de escribir.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed">
+                               Este proyecto fue realizado para poder ser utilizado como una herramienta de práctica para aquellas personas interesadas en mejorar sus habilidades de mecanografía. La app contiene un tutorial con la teoría pertinente e implementa ejercicios de prueba con dificultad en aumento y feedback específico para poder hacer una práctica deliberada.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Características Principales
+                            </h2>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Tutorial con la teoría de mecanografía con teclado QWERTY.</li>
+                                <li>Ejercicios para practicar con diferente dificultad.</li>
+                                <li>Feedback con estadísticas al finalizar cada ejercicio.</li>
+                                <li>Tabla con estadísticas de tus intentos anteriores.</li>
+                                <li>Gestión de sesiones de usuarios.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Habilidades Aplicadas
+                            </h2>
+                            <ul class="flex flex-wrap gap-2">
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Desarrollo de software de escritorio</li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Diseño de interfaces de usuario</li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Diseño de diagramas UML</li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Diseño de Base de Datos</li>
+                                <li class="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm">Autenticación y Sesiones de Usuario</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                🛠️ Habilidades y Tecnologías</h2>
+                            <ul class="flex flex-wrap gap-2">
+                                <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=oracle-java&logoColor=white" alt="Java">
+                                <img src="https://img.shields.io/badge/NetBeans-1B6AC6?style=for-the-badge&logo=netbeanside&logoColor=white" alt="NetBeans">
+                                <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">
+                                Enlaces del proyecto</h2>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a target="_blank" href="https://github.com/tonoburelo/AplicacionAprenderTyping"
+                                    class="flex-1 text-center bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                                    <i class="fab fa-github mr-2"></i>Ver en GitHub</a>
+                                <a target="_blank"
+                                    href="https://drive.google.com/file/d/1vnH3qEjLGHHZbzeScGgdwOUgEPXx33JD/view?usp=drive_link"
+                                    class="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Ver Documentación</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+            </main>
+
+            <%- include("../partials/footer") %>
+
+                <script src="/js/carrusel.js"></script>
+    </body>
+
+</html>
