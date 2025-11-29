@@ -14,9 +14,7 @@ app.get("/about", (req, res) => res.render("about"));
 app.get("/projects", (req, res) => res.render("projects"));
 app.get("/contact", (req, res) => res.render("contact"));
 
-app.get("/projects/projects-taller", (req, res) => res.render("projects/projects-taller"));
 app.get("/projects/projects-inpi", (req, res) => res.render("projects/projects-inpi"));
-app.get("/projects/projects-portafolio", (req, res) => res.render("projects/projects-portafolio"));
 app.get("/projects/projects-typingapp", (req, res) => res.render("projects/projects-typingapp"));
 app.get("/projects/projects-comportamiento_clientes", (req, res) => res.render("projects/projects-comportamiento_clientes"));
 app.get("/projects/projects-salario_ciencia_datos", (req, res) => res.render("projects/projects-salario_ciencia_datos"));
